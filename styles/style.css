@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+:root{
+	--fundo: #F2E8FF;
+	--fonte-normal: #323238;
+	--fonte-destaque: #271A45;
+	--nav: #47255B;
+	--branco: #fff;
+	--preto: #000;
+
+	--fonte-padrao: Arial, Helvetica, sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: var(--fonte-padrao);
+	background-color: var(--fundo);
+}
+
+#nav-main {
+	background-color: var(--nav);
+	box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.192);
+	padding: 12px;
+	text-align: right;
+}
+
+#nav-main > a{
+	color: var(--branco);
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0px 20px 10px 0px;
+	transition: font-weight 0.3s ease-in-out;
+}
+
+.container {
+    display: flex; /* Usando flexbox para alinhar a imagem e o texto lado a lado */
+    padding: 100px 120px 100px 120px;
+}
+
+strong{
+	color: var(--fonte-destaque);
+}
+
+aside{
+	margin-top: 30px;
+}
+
+aside > h1{
+	font-size: 1.6em;
+	text-align: center;
+	color: var(--fonte-destaque);
+	padding: 5px;
+}
+
+aside > p{
+	font-size: 1.1em;
+	padding: 35px;
+	text-align: justify;
+}
+
+section .social-media{
+	padding-left: 35px;
+}
+
+section .social-media > a{
+	padding-right: 15px;
+}
+
+.social-media > a > img{
+	width: 40px;
+	height: 40px;
+}
