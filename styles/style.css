@@ -21,6 +21,10 @@ body{
 	background-color: var(--fundo);
 }
 
+main{
+	text-align: center;
+}
+
 #nav-main {
 	background-color: var(--nav);
 	box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.192);
@@ -39,7 +43,7 @@ body{
 
 .container {
     display: flex; /* Usando flexbox para alinhar a imagem e o texto lado a lado */
-    padding: 100px 120px 40px 120px;
+    padding: 100px 120px 0px 120px;
 }
 
 strong{
@@ -50,10 +54,14 @@ aside{
 	margin-top: 30px;
 }
 
-.title{
-	padding: 5px;
+aside > h1{
 	font-size: 1.6em;
-	text-align: center;
+	color: var(--fonte-destaque);
+}
+
+.title{
+	padding-top: 70px;
+	font-size: 1.6em;
 	color: var(--fonte-destaque);
 }
 
@@ -64,10 +72,6 @@ aside{
 	line-height: 1.5;
 }
 
-section .social-media{
-	padding-left: 35px;
-}
-
 section .social-media > a{
 	padding-right: 15px;
 }
@@ -75,10 +79,6 @@ section .social-media > a{
 .social-media > a > img{
 	width: 40px;
 	height: 40px;
-}
-
-#technology{
-	text-align: center;
 }
 
 .description{
