@@ -39,7 +39,7 @@ body{
 
 .container {
     display: flex; /* Usando flexbox para alinhar a imagem e o texto lado a lado */
-    padding: 100px 120px 100px 120px;
+    padding: 100px 120px 40px 120px;
 }
 
 strong{
@@ -50,17 +50,18 @@ aside{
 	margin-top: 30px;
 }
 
-aside > h1{
+.title{
+	padding: 5px;
 	font-size: 1.6em;
 	text-align: center;
 	color: var(--fonte-destaque);
-	padding: 5px;
 }
 
-aside > p{
-	font-size: 1.1em;
+.text{
 	padding: 35px;
+	font-size: 1.09em;
 	text-align: justify;
+	line-height: 1.5;
 }
 
 section .social-media{
@@ -74,4 +75,19 @@ section .social-media > a{
 .social-media > a > img{
 	width: 40px;
 	height: 40px;
+}
+
+#technology{
+	text-align: center;
+}
+
+.description{
+	font-size: 1.09em;
+	padding: 20px 0px 20px 0px;
+}
+
+abbr > img{
+	width: 80px;
+	height: 80px;
+	padding: 0px 20px 10px 0px;
 }
