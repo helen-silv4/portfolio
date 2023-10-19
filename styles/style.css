@@ -19,7 +19,7 @@
 
 body{
 	font-family: var(--fonte-padrao);
-	background-color: var(--fundo);
+	background-color: var(--fundo);;
 }
 
 #nav-main {
@@ -44,7 +44,7 @@ body{
 
 .container {
     display: flex; /* Usando flexbox para alinhar a imagem e o texto lado a lado */
-    padding: 50px 120px 0px 120px;
+    padding: 50px 120px 20px 120px;
 }
 
 strong{
@@ -116,4 +116,25 @@ button{
 button:hover{
 	color: var(--preto);
 	background-color: var(--btn);
+}
+
+.container-form {
+    flex: 1;
+    padding: 50px;
+    background-color: #E1DFDF;
+    border-radius: 0px 20px 20px 0px;
+}
+
+label{
+	display: block;
+	margin: 20px 0px 0px 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
 }
