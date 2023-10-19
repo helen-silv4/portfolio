@@ -2,12 +2,13 @@
 
 :root{
 	--fundo: #F2E8FF;
-	--fonte-normal: #323238;
-	--fonte-destaque: #271A45;
 	--nav: #47255B;
 	--branco: #fff;
 	--preto: #000;
+	--btn: #b682d6;
 
+	--fonte-normal: #323238;
+	--fonte-destaque: #271A45;
 	--fonte-padrao: Arial, Helvetica, sans-serif;
 }
 
@@ -19,10 +20,6 @@
 body{
 	font-family: var(--fonte-padrao);
 	background-color: var(--fundo);
-}
-
-main{
-	text-align: center;
 }
 
 #nav-main {
@@ -41,21 +38,26 @@ main{
 	transition: font-weight 0.3s ease-in-out;
 }
 
+#about, #technology, #projects, #contact{
+	text-align: center;
+}
+
 .container {
     display: flex; /* Usando flexbox para alinhar a imagem e o texto lado a lado */
-    padding: 100px 120px 0px 120px;
+    padding: 50px 120px 0px 120px;
 }
 
 strong{
 	color: var(--fonte-destaque);
 }
 
-aside{
+#about > aside{
 	margin-top: 30px;
 }
 
 aside > h1{
 	font-size: 1.6em;
+	padding: 35px;
 	color: var(--fonte-destaque);
 }
 
@@ -66,7 +68,7 @@ aside > h1{
 }
 
 .text{
-	padding: 35px;
+	padding: 15px;
 	font-size: 1.09em;
 	text-align: justify;
 	line-height: 1.5;
@@ -90,4 +92,28 @@ abbr > img{
 	width: 80px;
 	height: 80px;
 	padding: 0px 20px 10px 0px;
+}
+
+.preview{
+	width: 500px;
+	height: 300px;
+	padding: 30px;
+}
+  
+li{
+	margin-left: 20px; /* Ajuste este valor conforme necessário */
+}
+
+button{
+	padding: 8px 20px 8px 20px;
+	font-weight: bold;
+	color: var(--branco);
+	background-color: var(--nav);
+	border: none;
+	border-radius: 3px;
+}
+
+button:hover{
+	color: var(--preto);
+	background-color: var(--btn);
 }
