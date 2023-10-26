@@ -17,18 +17,20 @@
 		</nav>
 	</header>
 	<main>
-		<section id="about" class="container">
-			<article>
-				<img class="image" src="assets/imagens/avatar.png">
-			</article>
-			<aside>
-				<h1>Olá, sou a Helen e bem-vindo(a) ao meu portfólio!</h1>
-				<p class="text">Atualmente estou cursanso <strong>Ciências da Computação</strong> na Universidade Paulista (Unip) e detenho uma formação técnica em <strong>Análise e Desenvolvimento de Sistemas</strong> pela Etec Professor Basilides de Godoy. Minha meta profissional é aprimorar minhas habilidades para me tornar uma <strong>Desenvolvedora Fullstack</strong>. Estou ativamente buscando uma oportunidade de <strong>estágio</strong> para aplicar e aprofundar meus conhecimentos.</p>
-				<section class="social-media">
-					<a href="#"><img src="assets/imagens/linkedin.png"></a>
-					<a href="#"><img src="assets/imagens/github-64.png"></a>
-				</section>
-			</aside>
+		<section id="about">
+			<div class="container">
+				<article>
+					<img class="image" src="assets/imagens/avatar.png">
+				</article>
+				<aside>
+					<h1>Olá, sou a Helen e bem-vindo(a) ao meu portfólio!</h1>
+					<p class="text">Atualmente estou cursanso <strong>Ciências da Computação</strong> na Universidade Paulista (Unip) e detenho uma formação técnica em <strong>Análise e Desenvolvimento de Sistemas</strong> pela Etec Professor Basilides de Godoy. Minha meta profissional é aprimorar minhas habilidades para me tornar uma <strong>Desenvolvedora Fullstack</strong>. Estou ativamente buscando uma oportunidade de <strong>estágio</strong> para aplicar e aprofundar meus conhecimentos.</p>
+					<section class="social-media">
+						<a href="#"><img src="assets/imagens/linkedin.png"></a>
+						<a href="#"><img src="assets/imagens/github-64.png"></a>
+					</section>
+				</aside>
+			</div>
 		</section>
 		<section id="technology">
 			<h1 class="title">Tecnologias</h1>
@@ -134,28 +136,26 @@
 		<section id="contact">
 			<h1 class="title">Contato</h1>
 			<p class="description">Sinta-se à vontade para <strong>me contatar!</strong></p>
-			<div class="container">
+			<div class="container-form">
     			<img src="assets/imagens/contato.png">
-				<div class="container-form">
-			      	<form action="#" method="post">
-			          	<label for="nome">
-			          		<strong>Nome:</strong>
-			          	</label><br>
-			          	<input type="text" id="nome" name="nome" required placeholder="Digite seu nome aqui">
-			        
-			          	<label for="email">
-			          		<strong>Email:</strong>
-			          	</label><br>
-			          	<input type="email" id="email" name="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required placeholder="Digite seu e-mail aqui">
-			        
-			          	<label for="mensagem">
-			          		<strong>Mensagem:</strong>
-			          	</label><br>
-			          	<textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+				<form action="#" method="post" class="ad">
+					<label for="nome">
+						<strong>Nome:</strong>
+					</label>
+					<input type="text" id="nome" name="nome" required placeholder="Digite seu nome aqui">
+				
+					<label for="email">
+						<strong>Email:</strong>
+					</label>
+					<input type="email" id="email" name="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required placeholder="Digite seu e-mail aqui">
+				
+					<label for="mensagem">
+						<strong>Mensagem:</strong>
+					</label>
+					<textarea id="mensagem" name="mensagem" rows="7" required></textarea>
 
-			          	<button type="submit">Enviar</button>  
-			      	</form>
-    			</div>
+					<button type="submit">Enviar</button>  
+				</form>
             </div>
 		</section>
 	</main>

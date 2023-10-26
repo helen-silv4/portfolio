@@ -38,26 +38,23 @@ body{
 	transition: font-weight 0.3s ease-in-out;
 }
 
-#about, #technology, #projects, #contact{
-	text-align: center;
-}
-
 .container {
     display: flex; /* Usando flexbox para alinhar a imagem e o texto lado a lado */
-    padding: 50px 120px 20px 120px;
+    justify-content: center;
+	width: 80vw;
 }
 
-strong{
-	color: var(--fonte-destaque);
+#about{
+	display: flex; /* Usando flexbox para alinhar a imagem e o texto lado a lado */
+    justify-content: center;	
 }
 
-#about > aside{
+#about > .container{
+	gap: 25px;
 	margin-top: 30px;
 }
 
-aside > h1{
-	font-size: 1.6em;
-	padding: 35px;
+strong{
 	color: var(--fonte-destaque);
 }
 
@@ -68,7 +65,6 @@ aside > h1{
 }
 
 .text{
-	padding: 15px;
 	font-size: 1.09em;
 	text-align: justify;
 	line-height: 1.5;
@@ -88,10 +84,41 @@ section .social-media > a{
 	padding: 20px 0px 20px 0px;
 }
 
+aside{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+aside > h1{
+	font-size: 1.6em;
+	padding: 35px;
+	color: var(--fonte-destaque);
+}
+
+aside > h2 {
+		text-align: center;
+}
+
+#technology {
+	display: flex; /* Usando flexbox para alinhar a imagem e o texto lado a lado */
+    align-items: center;
+	text-align: center;
+	flex-direction: column;
+	gap: 25px;
+}
+
 abbr > img{
 	width: 80px;
 	height: 80px;
 	padding: 0px 20px 10px 0px;
+}
+
+#projects {
+	display: flex; /* Usando flexbox para alinhar a imagem e o texto lado a lado */
+    align-items: center;
+	flex-direction: column;
+	gap: 25px;
 }
 
 .preview{
@@ -116,25 +143,66 @@ button{
 button:hover{
 	color: var(--preto);
 	background-color: var(--btn);
+	cursor: pointer;
+}
+
+.btn-links {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	gap: 15px;
+}
+
+#contact {
+	display: flex; /* Usando flexbox para alinhar a imagem e o texto lado a lado */
+    align-items: center;
+	flex-direction: column;
+	gap: 25px;
 }
 
 .container-form {
-    flex: 1;
-    padding: 50px;
-    background-color: #E1DFDF;
-    border-radius: 0px 20px 20px 0px;
+    display: flex;
+	background-color: #E1DFDF;
+	border-radius: 0px 20px 20px 0px;
+	width: 70%;
+}
+.container-form img {
+	width: 50%;
+}
+.container-form > form {
+	box-sizing: border-box;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 15px;
+	padding: 30px;
 }
 
+form > button{
+	width: 30%;
+	align-self: center; /*altera o único elemento*/
+}
 label{
 	display: block;
-	margin: 20px 0px 0px 5px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
+	font-family: var(--fonte-padrao);
+	box-sizing: border-box; /*não altera o tamanho do elemento*/
+	resize: none; /*não altera o tamanho*/
 	width: 100%;
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
+}
+
+footer {
+	margin-top: 70px;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: var(--nav);
+	padding: 20px;
 }
