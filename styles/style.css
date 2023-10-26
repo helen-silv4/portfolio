@@ -19,7 +19,7 @@
 
 body{
 	font-family: var(--fonte-padrao);
-	background-color: var(--fundo);;
+	background-color: var(--fundo);
 }
 
 #nav-main {
@@ -35,17 +35,16 @@ body{
 	font-size: 1em;
 	font-weight: bold;
 	padding: 0px 20px 10px 0px;
-	transition: font-weight 0.3s ease-in-out;
 }
 
 .container {
-    display: flex; /* Usando flexbox para alinhar a imagem e o texto lado a lado */
+    display: flex;
     justify-content: center;
 	width: 80vw;
 }
 
 #about{
-	display: flex; /* Usando flexbox para alinhar a imagem e o texto lado a lado */
+	display: flex;
     justify-content: center;	
 }
 
@@ -74,7 +73,7 @@ section .social-media > a{
 	padding-right: 15px;
 }
 
-.social-media > a > img{
+aside > section > a > img{
 	width: 40px;
 	height: 40px;
 }
@@ -101,7 +100,7 @@ aside > h2 {
 }
 
 #technology {
-	display: flex; /* Usando flexbox para alinhar a imagem e o texto lado a lado */
+	display: flex;
     align-items: center;
 	text-align: center;
 	flex-direction: column;
@@ -115,7 +114,7 @@ abbr > img{
 }
 
 #projects {
-	display: flex; /* Usando flexbox para alinhar a imagem e o texto lado a lado */
+	display: flex;
     align-items: center;
 	flex-direction: column;
 	gap: 25px;
@@ -128,7 +127,7 @@ abbr > img{
 }
   
 li{
-	margin-left: 20px; /* Ajuste este valor conforme necessário */
+	margin-left: 20px; 
 }
 
 button{
@@ -146,30 +145,32 @@ button:hover{
 	cursor: pointer;
 }
 
-.btn-links {
+.btn-links{
 	display: flex;
 	width: 100%;
 	justify-content: center;
 	gap: 15px;
 }
 
-#contact {
-	display: flex; /* Usando flexbox para alinhar a imagem e o texto lado a lado */
+#contact{
+	display: flex;
     align-items: center;
 	flex-direction: column;
 	gap: 25px;
 }
 
-.container-form {
+.container-form{
     display: flex;
 	background-color: #E1DFDF;
 	border-radius: 0px 20px 20px 0px;
 	width: 70%;
 }
+
 .container-form img {
 	width: 50%;
 }
-.container-form > form {
+
+.container-form > form{
 	box-sizing: border-box;
 	width: 50%;
 	display: flex;
@@ -181,8 +182,9 @@ button:hover{
 
 form > button{
 	width: 30%;
-	align-self: center; /*altera o único elemento*/
+	align-self: center;
 }
+
 label{
 	display: block;
 }
@@ -191,18 +193,27 @@ input[type="text"],
 input[type="email"],
 textarea {
 	font-family: var(--fonte-padrao);
-	box-sizing: border-box; /*não altera o tamanho do elemento*/
-	resize: none; /*não altera o tamanho*/
+	box-sizing: border-box;
+	resize: none;
 	width: 100%;
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 }
 
-footer {
-	margin-top: 70px;
+footer{
+	display: flex;
+	justify-content: space-between;
 	box-sizing: border-box;
 	width: 100%;
+	margin-top: 70px;
+	padding: 12px;
 	background-color: var(--nav);
-	padding: 20px;
+	box-shadow: 0px -6px 6px rgba(0, 0, 0, 0.192);
+	color: var(--branco);
+}
+
+footer > section > a > img{
+	width: 22px;
+	height: 22px;
 }
