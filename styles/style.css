@@ -22,7 +22,7 @@ body{
 	background-color: var(--fundo);
 }
 
-#nav-main {
+#nav-main{
 	background-color: var(--nav);
 	box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.192);
 	padding: 12px;
@@ -37,7 +37,7 @@ body{
 	padding: 0px 20px 10px 0px;
 }
 
-.container {
+.container{
     display: flex;
     justify-content: center;
 	width: 80vw;
@@ -95,11 +95,11 @@ aside > h1{
 	color: var(--fonte-destaque);
 }
 
-aside > h2 {
-		text-align: center;
+aside > h2{
+	text-align: center;
 }
 
-#technology {
+#technology{
 	display: flex;
     align-items: center;
 	text-align: center;
@@ -113,7 +113,7 @@ abbr > img{
 	padding: 0px 20px 10px 0px;
 }
 
-#projects {
+#projects{
 	display: flex;
     align-items: center;
 	flex-direction: column;
@@ -154,20 +154,21 @@ button:hover{
 
 #contact{
 	display: flex;
-    align-items: center;
 	flex-direction: column;
+	align-items: center;
 	gap: 25px;
 }
 
 .container-form{
     display: flex;
 	background-color: #E1DFDF;
-	border-radius: 0px 20px 20px 0px;
+	border-radius: 20px;
 	width: 70%;
 }
 
 .container-form img {
 	width: 50%;
+	border-radius: 20px 0px 0px 20px;
 }
 
 .container-form > form{
@@ -191,7 +192,7 @@ label{
 
 input[type="text"],
 input[type="email"],
-textarea {
+textarea{
 	font-family: var(--fonte-padrao);
 	box-sizing: border-box;
 	resize: none;
@@ -216,4 +217,34 @@ footer{
 footer > section > a > img{
 	width: 22px;
 	height: 22px;
+}
+
+/* telas menores*/
+@media (max-width: 968px){
+    .container{
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	}
+
+	.preview{
+		width: 420px;
+		height: 300px;
+		padding: 0;
+	}
+
+	.container-form{
+	    display: flex;
+	    flex-direction: column;
+		width: 90%;
+	}
+
+	.container-form img{
+		width: 100%;
+		border-radius: 20px 20px 0px 0px;
+	}
+
+	.container-form > form{
+		width: 100%;
+	}
 }
