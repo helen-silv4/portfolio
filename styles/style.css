@@ -221,6 +221,10 @@ footer > section > a > img{
 
 /* telas menores*/
 @media (max-width: 968px){
+	#nav-main{
+		text-align: center;
+	}
+
     .container{
 	    display: flex;
 	    flex-direction: column;
@@ -228,7 +232,7 @@ footer > section > a > img{
 	}
 
 	.preview{
-		width: 420px;
+		width: 400px;
 		height: 300px;
 		padding: 0;
 	}
@@ -246,5 +250,12 @@ footer > section > a > img{
 
 	.container-form > form{
 		width: 100%;
+	}
+
+	footer{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
 	}
 }
