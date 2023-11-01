@@ -22,11 +22,16 @@ body{
 	background-color: var(--fundo);
 }
 
+nav{
+	display: flex;
+	justify-content: right;
+}
+
 #nav-main{
 	background-color: var(--nav);
 	box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.192);
 	padding: 12px;
-	text-align: right;
+	gap: 10px;
 }
 
 #nav-main > a{
@@ -34,7 +39,7 @@ body{
 	text-decoration: none;
 	font-size: 1em;
 	font-weight: bold;
-	padding: 0px 20px 10px 0px;
+	
 }
 
 .container{
@@ -81,6 +86,7 @@ aside > section > a > img{
 .description{
 	font-size: 1.09em;
 	padding: 20px 0px 20px 0px;
+	text-align: center;
 }
 
 aside{
@@ -91,7 +97,7 @@ aside{
 
 aside > h1{
 	font-size: 1.6em;
-	padding: 35px;
+	margin: 40px 0px 35px 0px;
 	color: var(--fonte-destaque);
 }
 
@@ -222,7 +228,7 @@ footer > section > a > img{
 /* telas menores*/
 @media (max-width: 968px){
 	#nav-main{
-		text-align: center;
+		justify-content: center;
 	}
 
     .container{
@@ -232,8 +238,8 @@ footer > section > a > img{
 	}
 
 	.preview{
-		width: 400px;
-		height: 300px;
+		width: 350px;
+		height: 220px;
 		padding: 0;
 	}
 
