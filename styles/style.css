@@ -55,7 +55,7 @@ nav{
 
 #about > .container{
 	gap: 25px;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 strong{
@@ -63,7 +63,7 @@ strong{
 }
 
 .title{
-	padding-top: 70px;
+	padding-top: 20px;
 	font-size: 1.6em;
 	color: var(--fonte-destaque);
 }
