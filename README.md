@@ -1,7 +1,7 @@
 <h1 align="center"> Portfólio </h1>
 
 <p align="center">
-  <img alt="projeto portfólio" src="assets/imagens/preview.jpg" width="100%">
+  <img alt="projeto portfólio" src="assets/imagens/preview.png" width="100%">
 </p>
 
 ## 💻 Projeto
