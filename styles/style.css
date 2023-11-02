@@ -225,6 +225,22 @@ footer > section > a > img{
 	height: 22px;
 }
 
+.loading{
+	width: 20px;
+	height: 20px;
+	animation: loading 1s infinite linear;
+}
+
+@keyframes loading{
+    from{
+        transform: rotate(0deg);
+    } 
+
+    to{
+        transform: rotate(360deg);
+    }   
+}
+
 /* telas menores*/
 @media (max-width: 968px){
 	#nav-main{
