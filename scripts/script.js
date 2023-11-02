@@ -27,7 +27,7 @@ const handleSubmit = (event) => {
             "Accept": "application/json",
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({ Name: name.value, Email: email.value, Message: message.value, Date: fullDate, Page: pageSend })
+        body: JSON.stringify({ Name: name.value, Email: email.value, Message: message.value, Date: fullDate})
     }).then( () => {
         name.value = "";
         email.value = "";
