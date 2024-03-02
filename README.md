@@ -19,10 +19,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Git e Github
 - Figma
 
-## 🔖 Layout
-
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/GnS9XGtY1jCRG3UrAfoVC2/Portf%C3%B3lio----Helen-Silva?type=design&node-id=10%3A620&mode=design&t=a3aw09Ilzvlh4NZs-1). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
-
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT.
