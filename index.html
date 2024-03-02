@@ -1,172 +1,276 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Helen Silva</title>
 	<link rel="shorcut icon" href="assets/imagens/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<title>Portfólio |  Helen Silva</title>
-</head>
+    <link rel="stylesheet" href="styles/extends.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 <body>
-	<header>
-		<nav id="nav-main">
-			<a href="#about">Sobre</a>
-			<a href="#technology">Tecnologias</a>
-			<a href="#projects">Projetos</a>
-			<a href="#contact">Contato</a>
-		</nav>
-	</header>
-	<main>
-		<section id="about">
-			<div class="container">
-				<article>
-					<img class="image" src="assets/imagens/avatar.png">
-				</article>
-				<aside>
-					<h1>Olá, sou a Helen e bem-vindo(a) ao meu portfólio!</h1>
-					<p class="text">Atualmente estou cursanso <strong>Ciências da Computação</strong> na Universidade Paulista (Unip) e detenho uma formação técnica em <strong>Análise e Desenvolvimento de Sistemas</strong> pela Etec Professor Basilides de Godoy. Minha meta profissional é aprimorar minhas habilidades para me tornar uma <strong>Desenvolvedora Fullstack</strong>. Estou ativamente buscando uma oportunidade de <strong>estágio</strong> para aplicar e aprofundar meus conhecimentos.</p>
-					<section class="social-media">
-						<a href="https://www.linkedin.com/in/helen-silva-4a3035220/" target="_blank"><img src="assets/imagens/linkedin.png"></a>
-						<a href="https://github.com/helen-silv4" target="_blank"><img src="assets/imagens/github-64.png"></a>
-					</section>
-				</aside>
+	<nav class="navbar">
+		<div class="navbar__content max-width mb-0">
+			<a href="#">
+			  <p class="logo">Helen Silva</p>
+			</a>
+			<ul class="navbar__links">
+			  <li><a href="#header">Início</a></li>
+			  <li><a href="#about">Sobre</a></li>
+			  <li><a href="#skills">Habilidades</a></li>
+			  <li><a href="#projects">Projetos</a></li>
+			  <li><a href="#contact">Contato</a></li>
+			</ul>
+			<div class="navbar__mobile">
+				<img src="assets/imagens/menu.svg" alt="menu" class="burguer">
+				<ul class="mobile__links">
+					<li><a href="#header">Início</a></li>
+					<li><a href="#about">Sobre</a></li>
+					<li><a href="#skills">Habilidades</a></li>
+					<li><a href="#projects">Projetos</a></li>
+					<li><a href="#contact">Contato</a></li>
+				  </ul>
 			</div>
-		</section>
-		<section id="technology">
-			<h1 class="title">Tecnologias</h1>
-			<p class="description">Tecnologias com as quais tenho maior <strong>familiaridade:</strong></p>
-			<section>
-				<div>
-					<abbr title="HTML5"><img src="assets/imagens/html-5.png"></abbr>
-					<abbr title="CSS3"><img src="assets/imagens/css-3.png"></abbr>
-					<abbr title="Python"><img src="assets/imagens/python.png"></abbr>
-					<abbr title="C-Sharp"><img src="assets/imagens/c-sharp.png"></abbr>
-					<abbr title="MySql"><img src="assets/imagens/mysql-2.png"></abbr>
-				</div>
-				<div>
-					<abbr title="Windows"><img src="assets/imagens/windows.png"></abbr>
-					<abbr title="Visual Studio"><img src="assets/imagens/visual-studio.png"></abbr>
-					<abbr title="VS Code"><img src="assets/imagens/vscode.png"></abbr>
-					<abbr title="Sublime Text"><img src="assets/imagens/sublimetext.png"></abbr>
-				</div>
-				<div>
-					<abbr title="GitHub"><img src="assets/imagens/github.png"></abbr>
-					<abbr title="Figma"><img src="assets/imagens/figma.png"></abbr>
-				</div>
-			</section>
-			<p class="description">Tenho <strong>interesse em aprender:</strong></p>
-			<section>
-				<div>
-					<abbr title="Java"><img src="assets/imagens/java.png"></abbr>
-					<abbr title="JavaScript"><img src="assets/imagens/js.png"></abbr>
-					<abbr title="React"><img src="assets/imagens/react.png"></abbr>
-					<abbr title="TypeScript"><img src="assets/imagens/typescript.png"></abbr>
-				</div>
-				<div>
-					<abbr title="Linux"><img src="assets/imagens/linux.png"></abbr>
-				</div>
-			</section>
-		</section>
-		<section id="projects">
-			<h1 class="title">Projetos</h1>
-			<p class="description">Essa área abriga alguns de meus <strong>projetos destaques:</strong></p>
-			<div class="container">
-				<article>
-					<img class="preview" src="assets/imagens/dev-links.png">
-				</article>
-				<aside>
-					<h2>DevLinks</h2>
-					<p class="text">DevLinks é um agregador de links responsivo e com troca de tema que você pode usar como cartão de visitas nas suas redes sociais.</p>
-					<p class="text">Esse projeto foi desenvolvido com as seguintes tecnologias:</p>
-					<ul class="text">
-						<li>HTML e CSS;</li>
-						<li>JavaScript;</li>
-						<li>Git e Github;</li>
-						<li>Figma.</li>
-					</ul>
-					<div class="btn-links">
-						<a href="https://helen-silv4.github.io/dev-links/devlinks/" target="_blank"><button>Demo</button></a>
-						<a href="https://github.com/helen-silv4/dev-links" target="_blank"><button>Code</button></a>
-					</div>
-				</aside>
-			</div>
-			<div class="container">
-				<article>
-					<img class="preview" src="assets/imagens/cello-games.png">
-				</article>
-				<aside>
-					<h2>Cello Games</h2>
-					<p class="text">
-					Cello Games é uma loja de jogos fictícia com <strong>CRUD</strong> no <strong>MySQL</strong>, possui autenticação de usuários, gerenciamento de contas e pedidos, busca e carrinho de compras.</p>
-					<p class="text">Esse projeto foi desenvolvido com as seguintes tecnologias:</p>
-					<ul class="text">
-						<li>HTML e CSS;</li>
-						<li>Php e JavaScript;</li>
-						<li>Bootstrap;</li>
-						<li>MySql;</li>
-						<li>Git e Github.</li>
-					</ul>
-					<div class="btn-links">
-						<a href="#"><button style="cursor: not-allowed;background-color: #ccc;color: #888;">Demo</button></a>
-						<a href="https://github.com/helen-silv4/loja-virtual" target="_blank"><button>Code</button></a>
-					</div>
-				</aside>
-			</div>
-			<div class="container">
-				<article>
-					<img class="preview" src="assets/imagens/e-waste.png">
-				</article>
-				<aside>
-					<h2>E-waste</h2>
-					<p class="text">E-Waste é um site informativo sobre o lixo eletônico. Projeto de APS. Colaboradores <strong><a href="#">Guilherme</a></strong>, <strong><a href="#">Helen</a></strong>, <strong><a href="#">Vitor</a></strong>.</p>
-					<p class="text">Esse projeto foi desenvolvido com as seguintes tecnologias:</p>
-					<ul class="text">
-						<li>HTML e CSS;</li>
-						<li>JavaScript;</li>
-						<li>Git e Github;</li>
-						<li>Figma.</li>
-					</ul>
-					<div class="btn-links">
-						<a href="https://helen-silv4.github.io/e-waste/" target="_blank"><button>Demo</button></a>
-						<a href="https://github.com/helen-silv4/e-waste" target="_blank"><button>Code</button></a>
-					</div>
-				</aside>
-			</div>
-		</section>
-		<section id="contact">
-			<h1 class="title">Contato</h1>
-			<p class="description">Sinta-se à vontade para <strong>me contatar!</strong></p>
-			<div class="container-form">
-    			<img src="assets/imagens/contato.png">
-				<form id="form-contact" action="https://api.sheetmonkey.io/form/67SRCFWrDbXSpUsXkmcm9n" method="post">
-					<label for="name">
-						<strong>Nome:</strong>
-					</label>
-					<input type="text" id="name" name="name" required placeholder="Digite seu nome aqui">
-				
-					<label for="email">
-						<strong>Email:</strong>
-					</label>
-					<input type="email" id="email" name="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required placeholder="seuemail@gmail.com">
-				
-					<label for="message">
-						<strong>Mensagem:</strong>
-					</label>
-					<textarea id="message" name="message" rows="7" required placeholder="Digite sua mensagem aqui"></textarea>
+		</div>	
+	</nav>
 
-					<button id="button-form" type="submit">Enviar</button>  
-				</form>
-            </div>
-		</section>
-	</main>
-	<footer>
-		<p>Desenvolvido por Helen Silva</p>
-		<p>Copyright &copy; 2023</p>
-		<section class="social-media">
-			<a href="https://www.linkedin.com/in/helen-silva-4a3035220/" target="_blank"><img src="assets/imagens/linkedin-white.png"></a>
-			<a href="https://github.com/helen-silv4" target="_blank"><img src="assets/imagens/github-64-white.png"></a>
-			<a href="https://www.instagram.com/helen_silv4/" target="_blank"><img src="assets/imagens/insta-white.png"></a>
-		</section>
+	<header id="header" class="max-width">
+		<div class="header__left">
+			<h1>Olá! Sou Helen Silva Desenvolvedora Fullstack</h1>
+			<p>
+				Sou apaixonada por criar soluções tecnológicas que resolvem problemas reais e que agregam valor aos usuários!
+			</p>
+			<a href="#about" class="btn btn-primary">Saiba Mais!</a>
+		</div>
+
+		<div class="header__right">
+			<div class="header__image">
+				<img src="assets/imagens/helen-silva.png" alt="Helen Silva" class="helen">
+				<img src="assets/imagens/abstract.svg" alt="background" class="background">
+			</div>
+		</div>
+	</header>
+
+	<section id="about" class="about max-width">
+		<div class="about__left">
+			<h2 class="secondary-title">Além do código: quem sou eu?</h2>
+			<p>
+				Que tal se conectar comigo nas redes sociais abaixo e saber mais sobre meu trabalho?
+			</p>
+			<ul>
+				<li><a href="https://www.linkedin.com/in/helen-silva-4a3035220/" target="_blank"><img src="assets/imagens/linkedin.svg" alt="Linkedin"></a></li>
+				<li><a href="https://github.com/helen-silv4" target="_blank"><img src="assets/imagens/github.svg" alt="GitHub"></a></li>
+			</ul>
+			<a href="assets/curriculo/Curriculo_Helen_2024_2.0.pdf" download="Curriculo_Helen_2024_2.0.pdf" type="application/pdf">Baixe meu currículo &rarr;</a>
+		</div>
+
+		<div class="about__right">
+			<h3 class="tertiary-title mb-m">
+				Desenvolvedora Fullstack
+			</h3>
+			<p>
+				Olá, eu sou Helen Silva, uma desenvolvedora Fullstack apaixonada por tecnologia e soluções criativas.
+				Atualmente estou cursanso <strong>Cências da Computação</strong> na Universidade Paulista - Unip (3º Semestre) e 
+				detenho uma formação técnica em <strong>Análise e Desenvolvimento de Sistemas</strong> pela Etec Professor 
+				Basilides de Godoy. Venho buscando ativamente uma oportunidade de estágio para aplicar e aprofundar meus conhecimentos.
+			</p>
+			<p>
+				Eu amo o desafio de encontrar soluções inovadoras e criativas para problemas complexos e 
+				estou sempre buscando aprender e crescer como uma profissional.
+			</p>
+		</div>
+	</section>
+
+	<section id="skills" class="skills">
+		<div class="skills__content max-width">
+		  	<h2 class="tertiary-title">Minhas habilidades</h2>
+		  	<p class="description">
+				Descubra as habilidades e ferramentas que tenho familiaridade e permite
+				criar soluções criativas e funcionais para meus clientes.
+		  	</p>
+		  	<ul>
+				<li class="skills__item">
+			  		<div class="image-container">
+						<img src="assets/imagens/html.png" alt="HTML5" />
+			  		</div>
+			  		<h3>HTML5</h3>
+				</li>
+
+				<li class="skills__item">
+					<div class="image-container">
+					    <img src="assets/imagens/css.png" alt="CSS3" />
+					</div>
+					<h3>CSS3</h3>
+			    </li>
+
+				<li class="skills__item">
+					<div class="image-container">
+					    <img src="assets/imagens/python.png" alt="Python" />
+					</div>
+					<h3>Python</h3>
+			    </li>
+
+				<li class="skills__item">
+					<div class="image-container">
+					    <img src="assets/imagens/java.png" alt="Java" />
+					</div>
+					<h3>Java</h3>
+			    </li>
+
+				<li class="skills__item">
+					<div class="image-container">
+						<img src="assets/imagens/csharp.png" alt="C-Sharp" />
+					</div>
+					<h3>C#</h3>
+				</li>
+
+				<li class="skills__item">
+					<div class="image-container">
+						<img src="assets/imagens/js.png" alt="JavaScript" />
+					</div>
+					<h3>JavaScript</h3>
+				</li>
+
+				<li class="skills__item">
+					<div class="image-container">
+					  	<img src="assets/imagens/mysql.png" alt="MySql" />
+					</div>
+					<h3>MySql</h3>
+			  	</li>
+
+				<li class="skills__item">
+					<div class="image-container">
+						<img src="assets/imagens/sqlserver.png" alt="SQL Server" />
+					</div>
+					<h3>SQL Server</h3>
+				</li>
+
+				<li class="skills__item">
+					<div class="image-container">
+						<img src="assets/imagens/vscode.png" alt="Vs Code" />
+					</div>
+					<h3>VS Code</h3>
+				</li>
+
+				<li class="skills__item">
+					<div class="image-container">
+						<img src="assets/imagens/vs.png" alt="Visual Studio" />
+					</div>
+					<h3>Visual Studio</h3>
+				</li>
+
+				<li class="skills__item">
+					<div class="image-container">
+					  	<img src="assets/imagens/gh.png" alt="GitHub" />
+					</div>
+					<h3>GitHub</h3>
+			  	</li>
+
+				<li class="skills__item">
+					<div class="image-container">
+						<img src="assets/imagens/figma.png" alt="Figma" />
+					</div>
+					<h3>Figma</h3>
+				</li>
+		  	</ul>
+	</section>
+
+	<section id="projects" class="projects max-width">
+		<div class="projects__content">
+			<h2 class="secondary-title">Projetos em Destaques</h2>
+			<p>
+				De ideias abstratas a projetos bem-sucedidos, aqui estão alguns dos meus trabalhos mais recentes
+			</p>
+		</div>
+		<ul>
+			<li>
+				<div class="image">
+					<img src="assets/imagens/dev-links.png" alt="DevLinks">
+				</div>
+				<div class="projects__info">
+					<h3 class="tertiary-title">DevLinks</h3>
+					<p>
+						DevLinks é um agregador de links responsivo e com troca de tema que você pode usar como cartão de visitas nas suas redes sociais.
+					</p>
+					<a href="https://helen-silv4.github.io/dev-links/devlinks/" target="_blank">Leia mais &rarr;</a>
+				</div>
+			</li>
+
+			<li class="projects__reversed-list">
+				<div class="image">
+					<img src="assets/imagens/cello-games-2.png" alt="Cello Games">
+				</div>
+				<div class="projects__info">
+					<h3 class="tertiary-title">Cello Games</h3>
+					<p>
+						Cello Games é uma loja de jogos fictícia com CRUD no MySQL, possui autenticação de usuários, gerenciamento de contas e pedidos, busca e carrinho de compras.
+					</p>
+					<a href="https://github.com/helen-silv4/loja-virtual/" target="_blank">Leia mais &rarr;</a>
+				</div>
+			</li>
+
+			<li>
+				<div class="image">
+					<img src="assets/imagens/e-waste.png" alt="E-Waste">
+				</div>
+				<div class="projects__info">
+					<h3 class="tertiary-title">E-waste</h3>
+					<p>
+						E-Waste é um site totalmente responsivo, adaptando-se a diferentes dispositivos e telas. Seu propósito central consiste em promover a conscientização acerca do problema do lixo eletrônico.
+					</p>
+					<a href="https://helen-silv4.github.io/e-waste/" target="_blank">Leia mais &rarr;</a>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<section id="contact" class="mb-m">
+		<h2 class="tertiary-title mb-s">Vamos conversar!</h2>
+		<p class="mb-m">
+			Ficarei feliz em saber mais sobre seus projetos e como podemos trabalhar juntos para torná-los realidade
+		</p>
+		<div class="container-form">
+			<img src="assets/imagens/contato.png" alt="Contato">
+			<form id="form-contact" action="https://api.sheetmonkey.io/form/67SRCFWrDbXSpUsXkmcm9n" method="post">
+				<label for="name">
+					<strong>Nome:</strong>
+				</label>
+				<input type="text" id="name" name="name" required placeholder="Digite seu nome aqui">
+			
+				<label for="email">
+					<strong>Email:</strong>
+				</label>
+				<input type="email" id="email" name="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required placeholder="seuemail@gmail.com">
+			
+				<label for="message">
+					<strong>Mensagem:</strong>
+				</label>
+				<textarea id="message" name="message" rows="7" required placeholder="Digite sua mensagem aqui"></textarea>
+
+				<button id="button-form" type="submit" xlass="btn btn-primary">Enviar</button>  
+			</form>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="footer__content max-width mb-0">
+			<ul>
+				<li><a href="https://www.linkedin.com/in/helen-silva-4a3035220/" target="_blank"><img src="assets/imagens/linkedin.svg" alt="Linkedin"></a></li>
+				<li><a href="https://github.com/helen-silv4" target="_blank"><img src="assets/imagens/github.svg" alt="GitHub"></a></li>
+			</ul>
+			<div class="footer__contact">
+				<span>helen_silva32@hotmail.com</span>
+			</div>
+			<p class="footer__copyright">
+				© 2024 Helen Silva. Todos os direitos reservados.
+			</p>
+		</div>
 	</footer>
 	<script src="scripts/script.js"></script>
 </body>
